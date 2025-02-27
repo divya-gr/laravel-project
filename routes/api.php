@@ -13,7 +13,7 @@ Route::post('/upload', function (Request $request) {
         $path = $request->file('photo')->store('uploads', 'public');
 
         return response()->json([
-            'message' => 'File uploaded successfully',
+            'message' => ' uploaded successfully',
             'file_path' => asset('storage/' . $path),
         ]);
     }
