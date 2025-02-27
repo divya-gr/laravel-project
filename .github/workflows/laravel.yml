@@ -20,5 +20,4 @@ jobs:
           git add .
           git commit -m "serversidechanges" || echo "No changes to commit"
           git pull origin main
-          php artisan migrate 
           pm2 restart 13
